@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Weather Forecast</h1>
+    </header>
+        
+    <main class="main-content">
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter city name" />
+            <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+        </div>
+
+        <section class="weather-card">
+            <div class="weather-header">
+                <h2 class="location">Loading...</h2>
+                <p class="date">--/--/----</p>
+            </div>
+            
+            <div class="weather-main">
+                <div class="temperature-section">
+                    <div class="weather-icon">
+                        <i class="fas fa-question"></i>
+                    </div>
+                    <div class="temperature">
+                        <span class="temp-value">--</span>
+                        <span class="temp-unit">°C</span>
+                    </div>
+                </div>
+                
+                <div class="weather-details">
+                    <p class="description">--</p>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <i class="fas fa-tint"></i>
+                            <span class="humidity">--%</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-wind"></i>
+                            <span class="wind">-- m/s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="refresh-btn" id="refreshBtn">
+                <i class="fas fa-sync-alt"></i> Refresh
+            </button>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>Weather data provided by OpenWeatherMap</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
